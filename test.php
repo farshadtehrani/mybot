@@ -1,9 +1,13 @@
 <?php
- 
+
+
+https://github.com/farshadtehrani/farshadtest.git
+
+
 header('Content-Type: text/html; charset=utf-8');
 $message= file_get_contents("php://input");
 $arrayMessage= json_decode($message, true);
-$token= "544210869:AAGdGFA18aY3PPGBWojblIfhRkPZuHOVUn8";
+$token= "544210869:AAG6-Q6I1WZ_EH5FBeLpoYjkbTovw7-yS1g";
 $chat_id= $arrayMessage['message']['from']['id'];
 $command= $arrayMessage['message']['text'];
 $id = $arrayMessage['message']['message_id'];
